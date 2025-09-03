@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// تعريف الثوابت - تأكد من أن المسار صحيح
+// تعريف الثوابت 
 define('ROOT', dirname(__DIR__));
 define('URLROOT', 'http://localhost:8000'); 
 

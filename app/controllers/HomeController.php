@@ -12,7 +12,7 @@ class HomeController extends BaseController {
         $data = [
             'title' => 'الصفحة الرئيسية',
             'welcome' => 'مرحباً بك في تطبيقنا',
-            'user_name' => $this->session->get('user_name') ?? 'زائر' // إضافة قيمة افتراضية
+            'user_name' => $this->session->get('user_name') ?? 'زائر' 
         ];
         
         $this->view('home', $data);
