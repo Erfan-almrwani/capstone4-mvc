@@ -2,6 +2,34 @@
 
 A full-featured PHP MVC application with authentication system, database integration, and dynamic routing.
 
+##  Application Screenshots
+
+###  Authentication Flow
+
+#### Login Page
+![Login Page](documentation/images/login.png)
+*Login page with a modern design with the ability to enter email and password*
+
+#### Registration Page  
+![Registration Page](documentation/images/register.png)
+*New user registration page with data validation and error notifications*
+
+###  Dashboard Pages
+
+#### Home Dashboard
+![Home Page](documentation/images/home.png)
+*Home page after login with personalized welcome message and navigation menu*
+
+#### Users Management
+![Users Page](documentation/images/users.png)
+*User Management Panel Displays all users registered in the system*
+
+###  Database Structure
+
+#### MySQL Database Schema
+![Database Structure](documentation/images/database.png)
+*Users table structure in database with relationships and basic fields*
+
 ##  Project Overview
 
 This is a complete PHP MVC framework implementation for the capstone project, featuring:
@@ -26,37 +54,18 @@ This is a complete PHP MVC framework implementation for the capstone project, fe
 ##  Project Structure
 capstone4-mvc/
 ├── app/
-│   ├── controllers/
-│   │   ├── BaseController.php
-│   │   ├── HomeController.php
-│   │   ├── UsersController.php
-│   │   └── AuthController.php
-│   ├── models/
-│   │   ├── Database.php
-│   │   ├── Model.php
-│   │   └── User.php
-│   ├── views/
-│   │   ├── home.php
-│   │   ├── auth/
-│   │   │   ├── login.php
-│   │   │   └── register.php
-│   │   └── users/
-│   │       └── index.php
-│   └── core/
-│       ├── App.php
-│       ├── Database.php
-│       ├── Router.php
-│       ├── Request.php
-│       └── Session.php
-├── config/
-│   └── database.php
-├── public/
-│   ├──assets/css
-│   │          └──style.css
-│   └── index.php
+│ ├── controllers/ # Application controllers
+│ ├── models/ # Database models
+│ ├── views/ # Template files
+│ └── core/ # Core framework classes
+├── config/ # Configuration files
+├── public/ # Publicly accessible files
+├── documentation/ # Screenshots and docs
+│ └── images/
+│ ├── screenshots/
+│ └── database/
 ├── vendor/ # Composer dependencies
 └── README.md # This file
-
 
 ##  Installation Guide
 
