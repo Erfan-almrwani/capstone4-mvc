@@ -1,0 +1,13 @@
+# Ignore files
+.DS_Store
+Thumbs.db
+*.log
+logs/
+vendor/
+node_modules/
+.env
+.idea/
+.vscode/
+/cache/
+/sessions/
+/uploads/
