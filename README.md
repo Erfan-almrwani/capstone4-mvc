@@ -64,57 +64,57 @@ library_management/
 └── index.php
 
 
-Key OOP Concepts Implemented
-Encapsulation
-Private properties with public getters/setters
-Database connection details hidden in config
+## Key OOP Concepts Implemented
+1.Encapsulation
+-Private properties with public getters/setters
+-Database connection details hidden in config
 
-Polymorphism
-NotificationInterface with multiple implementations
-Flexible controller methods handling different actions
+2.Polymorphism
+-NotificationInterface with multiple implementations
+-Flexible controller methods handling different actions
 
-Traits
-LoggingTrait for system-wide logging
-SearchableTrait for reusable search functionality
+3.Traits
+-LoggingTrait for system-wide logging
+-SearchableTrait for reusable search functionality
 
-Security Features
-PDO Prepared Statements prevent SQL injection
-htmlspecialchars() prevents XSS attacks
-Input validation and sanitization
-Error logging instead of public error display
-Disabled PDO emulated prepares
+4.Security Features
+-PDO Prepared Statements prevent SQL injection
+-htmlspecialchars() prevents XSS attacks
+-Input validation and sanitization
+-Error logging instead of public error display
+-Disabled PDO emulated prepares
 
 
-Database Schema
+5.Database Schema
 The system uses three main tables:
 books: Store book information and availability
 users: Store user details and contact information
 borrows: Track book borrowing history and late fees
 
 
-Screenshots
+## Screenshots
 
-Home Page
+1.Home Page
 ![home Page](Screenshots/home1.png)
 ![home Page](Screenshots/home2.png)
 *Home page with system statistics*
 
-Books Management
+2.Books Management
 ![Books Management](screenshots/booksManagment.png)
 *Book management interface - view, add, edit, delete*
 
-Users Management
+3.Users Management
 ![Users Management](screenshots/users.png)
 ![Users Management](screenshots/adduser.png)
 *User management interface*
 
-Borrowing Interface
+4.Borrowing Interface
 ![Borrowing Interface](screenshots/borrowRegestration.png.png)
 ![Borrowing Interface](screenshots/borrow.png.png)
 
 *Loan and Operations Management Interface*
 
-Usage
+## Usage
 1.Add Books: Navigate to Books Management → Add New Book
 
 2.Manage Users: Go to User Management → Add New User
@@ -125,17 +125,17 @@ Usage
 
 5.Calculate Fees: System automatically calculates late fees
 
-Contributing
+## Contributing
 1.0Fork the project
 2.Create your feature branch (git checkout -b feature/AmazingFeature)
 3.Commit your changes (git commit -m 'Add some AmazingFeature')
 4.Push to the branch (git push origin feature/AmazingFeature)
 5.Open a Pull Request
 
-Authors
-Erfan-alomrwani
+## Authors
+Erfan-almrwani
 
-Acknowledgments
+## Acknowledgments
 PHP Documentation
 MVC Pattern Resources
 PDO Best Practices Guides
