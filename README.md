@@ -95,22 +95,22 @@ borrows: Track book borrowing history and late fees
 ## Screenshots
 
 1.Home Page
-![home Page](Screenshots/home1.png)
-![home Page](Screenshots/home2.png)
+![home Page](./screenshots/home1.png)
+![home Page](./screenshots/home2.png)
 *Home page with system statistics*
 
 2.Books Management
-![Books Management](screenshots/booksManagment.png)
+![Books Management](./screenshots/booksManagment.png)
 *Book management interface - view, add, edit, delete*
 
 3.Users Management
-![Users Management](screenshots/users.png)
-![Users Management](screenshots/adduser.png)
+![Users Management](./screenshots/users.png)
+![Users Management](./screenshots/addUser.png)
 *User management interface*
 
 4.Borrowing Interface
-![Borrowing Interface](screenshots/borrowRegestration.png.png)
-![Borrowing Interface](screenshots/borrow.png.png)
+![Borrowing Interface](./screenshots/borrowRegestration.png)
+![Borrowing Interface](./screenshots/borrow.png)
 
 *Loan and Operations Management Interface*
 
