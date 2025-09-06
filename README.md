@@ -1,4 +1,4 @@
-# Library Management System - Challing 3
+# Library Management System - Challenge 3
 
 A comprehensive Library Management System built using PHP MVC architecture with PDO and advanced OOP concepts.
 
@@ -23,20 +23,26 @@ A comprehensive Library Management System built using PHP MVC architecture with 
 ```bash
 git clone https://github.com/Erfan-almrwani/capstone4-mvc.git
 cd capstone4-mvc
+```
 
-2. Set up the database
+2. Set up the database:
+```bash
 mysql -u username -p database_name < database/schema.sql
+```
 
 3. Configure database connection:
-# Edit config/database.php with your database credentials
+Edit `config/database.php` with your database credentials
 
 4. Start the development server:
+```bash
 php -S localhost:8000
+```
 
-5. Open your browser and navigate to http://localhost:8000
+5. Open your browser and navigate to `http://localhost:8000`
 
+##  Project Structure
 
-  Project Structure
+```
 library_management/
 ├── config/
 │   └── database.php
@@ -62,80 +68,76 @@ library_management/
 │   ├── EmailNotification.php
 │   └── SMSNotification.php
 └── index.php
+```
 
+##  Key OOP Concepts Implemented
 
-## Key OOP Concepts Implemented
-1.Encapsulation
--Private properties with public getters/setters
--Database connection details hidden in config
+### 1. Encapsulation
+- Private properties with public getters/setters
+- Database connection details hidden in config
 
-2.Polymorphism
--NotificationInterface with multiple implementations
--Flexible controller methods handling different actions
+### 2. Polymorphism
+- NotificationInterface with multiple implementations
+- Flexible controller methods handling different actions
 
-3.Traits
--LoggingTrait for system-wide logging
--SearchableTrait for reusable search functionality
+### 3. Traits
+- LoggingTrait for system-wide logging
+- SearchableTrait for reusable search functionality
 
-4.Security Features
--PDO Prepared Statements prevent SQL injection
--htmlspecialchars() prevents XSS attacks
--Input validation and sanitization
--Error logging instead of public error display
--Disabled PDO emulated prepares
+### 4. Security Features
+- PDO Prepared Statements prevent SQL injection
+- `htmlspecialchars()` prevents XSS attacks
+- Input validation and sanitization
+- Error logging instead of public error display
+- Disabled PDO emulated prepares
 
-
-5.Database Schema
+### 5. Database Schema
 The system uses three main tables:
-books: Store book information and availability
-users: Store user details and contact information
-borrows: Track book borrowing history and late fees
+- **books**: Store book information and availability
+- **users**: Store user details and contact information
+- **borrows**: Track book borrowing history and late fees
 
+##  Screenshots
 
-## Screenshots
-
-1.Home Page
-![home Page](./screenshots/home1.png)
-![home Page](./screenshots/home2.png)
+### 1. Home Page
+![Home Page](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/home1.png)
+![Home Page](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/home2.png)
 *Home page with system statistics*
 
-2.Books Management
-![Books Management](./screenshots/booksManagment.png)
+### 2. Books Management
+![Books Management](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/booksManagment.png)
 *Book management interface - view, add, edit, delete*
 
-3.Users Management
-![Users Management](./screenshots/users.png)
-![Users Management](./screenshots/addUser.png)
+### 3. Users Management
+![Users Management](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/users.png)
+![Add User](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/addUser.png)
 *User management interface*
 
-4.Borrowing Interface
-![Borrowing Interface](./screenshots/borrowRegestration.png)
-![Borrowing Interface](./screenshots/borrow.png)
-
+### 4. Borrowing Interface
+![Borrowing Registration](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/borrowRegestration.png)
+![Borrowing Management](https://raw.githubusercontent.com/Erfan-almrwani/capstone4-mvc/capstone4-mvc-ch3/screenshots/borrow.png)
 *Loan and Operations Management Interface*
 
-## Usage
-1.Add Books: Navigate to Books Management → Add New Book
+##  Usage
 
-2.Manage Users: Go to User Management → Add New User
+1. **Add Books**: Navigate to Books Management → Add New Book
+2. **Manage Users**: Go to User Management → Add New User
+3. **Process Borrowings**: Use the Borrow section to lend books
+4. **Track Returns**: Monitor due dates and process returns
+5. **Calculate Fees**: System automatically calculates late fees
 
-3.Process Borrowings: Use the Borrow section to lend books
+##  Contributing
 
-4.Track Returns: Monitor due dates and process returns
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-5.Calculate Fees: System automatically calculates late fees
+##  Authors
+- Erfan-almrwani
 
-## Contributing
-1.0Fork the project
-2.Create your feature branch (git checkout -b feature/AmazingFeature)
-3.Commit your changes (git commit -m 'Add some AmazingFeature')
-4.Push to the branch (git push origin feature/AmazingFeature)
-5.Open a Pull Request
-
-## Authors
-Erfan-almrwani
-
-## Acknowledgments
-PHP Documentation
-MVC Pattern Resources
-PDO Best Practices Guides
+##  Acknowledgments
+- PHP Documentation
+- MVC Pattern Resources
+- PDO Best Practices Guides
